@@ -1,2 +1,2 @@
-# non_rt_
+# non_rt
 This repository is for building non-rt monitoring crd
