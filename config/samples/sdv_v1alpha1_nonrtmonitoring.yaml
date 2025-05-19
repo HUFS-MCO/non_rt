@@ -1,0 +1,9 @@
+apiVersion: sdv.non-rt/v1alpha1
+kind: NonRTMonitoring
+metadata:
+  labels:
+    app.kubernetes.io/name: non-rt-controller
+    app.kubernetes.io/managed-by: kustomize
+  name: nonrtmonitoring-sample
+spec:
+  # TODO(user): Add fields here

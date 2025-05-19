@@ -1,0 +1,27 @@
+# permissions for end users to edit nonrtmonitorings.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  labels:
+    app.kubernetes.io/name: non-rt-controller
+    app.kubernetes.io/managed-by: kustomize
+  name: nonrtmonitoring-editor-role
+rules:
+- apiGroups:
+  - sdv.non-rt
+  resources:
+  - nonrtmonitorings
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - sdv.non-rt
+  resources:
+  - nonrtmonitorings/status
+  verbs:
+  - get
